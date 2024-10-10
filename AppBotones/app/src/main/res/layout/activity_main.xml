@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="33dp"
+        android:text="Button"
+        app:icon="@drawable/ic_bluetooth"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/tggBtnApagado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="80dp"
+        android:text="ToggleButton"
+        android:textOff="APAGADO"
+        android:textOn="ENCENDIDO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtEstado"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_reiniciar"
+        tools:layout_editor_absoluteX="181dp"
+        tools:layout_editor_absoluteY="161dp" />
+
+    <TextView
+        android:id="@+id/txtEstado"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="253dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="78dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/txtConexion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tggBtnApagado"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/sConexion"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="25dp"
+        android:text="Estado de la conexion"
+        app:layout_constraintEnd_toStartOf="@+id/txtConexion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tggBtnApagado" />
+
+    <TextView
+        android:id="@+id/txtConexion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="346dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sConexion"
+        app:layout_constraintTop_toBottomOf="@+id/txtEstado" />
+
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <TextView
+        android:id="@+id/txtCheck"
+        android:layout_width="158dp"
+        android:layout_height="25dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="227dp"
+        tools:layout_editor_absoluteY="457dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
