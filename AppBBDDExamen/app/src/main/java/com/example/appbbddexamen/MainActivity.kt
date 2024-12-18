@@ -83,9 +83,9 @@ class MainActivity : ComponentActivity() {
 
         Scaffold(
             topBar = {
-                TopAppBar(
+                TopAppBar(modifier = Modifier,
                     title = { Text("Gestión de Clientes") },
-                    colors = TopAppBarDefaults.smallTopAppBarColors(containerColor = MaterialTheme.colorScheme.primary)
+                    colors = TopAppBarDefaults.smallTopAppBarColors(containerColor = MaterialTheme.colorScheme.primaryContainer)
                 )
             },
 
@@ -275,7 +275,7 @@ class MainActivity : ComponentActivity() {
         return db.insert(AyudanteBaseDatos.TABLA_CLIENTES, null, valores)
     }
 
-
+// Esto no puede ser por que no puedo insertar varios, solo uno
 /*fun inicioApp(ayudante: AyudanteBaseDatos): Long {
 
     val db = ayudante.readableDatabase

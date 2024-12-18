@@ -31,23 +31,18 @@ class AyudanteBaseDatos (context: Context) : SQLiteOpenHelper(context, NOMBRE_BA
             )
         """
         db.execSQL(crearTablaUsuarios)
-    }
 
-    /*val insertarUsuarios = """
+        /*val insertarUsuarios = """
             INSERT INTO $TABLA_CLIENTES VALUES(1,"Cris","Tiano", "1234", 10.00)
         """
-db.execSQL(insertarUsuarios)*/
+        db.execSQL(insertarUsuarios)*/
+    }
+
+
 
     override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
         db.execSQL("DROP TABLE IF EXISTS $TABLA_CLIENTES")
         onCreate(db)
-
-        /*if (oldVersion < 2) {
-            // Añadimos los nuevos campos en la versión 2
-            db.execSQL("ALTER TABLE $TABLA_USUARIOS ADD COLUMN $COLUMNA_EDAD INTEGER DEFAULT 0")
-            db.execSQL("ALTER TABLE $TABLA_USUARIOS ADD COLUMN $COLUMNA_TELEFONO TEXT DEFAULT ''")
-        }*/
-
 
     }
 }
