@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "338574570630",
+    "project_id": "apprepasofirebase",
+    "storage_bucket": "apprepasofirebase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338574570630:android:1395d86d9b9a5903778d07",
+        "android_client_info": {
+          "package_name": "com.example.apprepasofirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZifcUIASm2w6NBDNdh1E8qyxL4fBk1Us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
